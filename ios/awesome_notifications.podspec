@@ -15,13 +15,13 @@ A complete solution to create Local Notifications and Push Notifications, throug
   s.dependency 'IosAwnCore', '~> 0.10.0'
   s.platform = :ios, '12.0'
 
-  # Flutter.framework does not contain a i386 slice. Only x86_64 simulators are supported.
+  # Flutter.framework does not contain a i386 slice. Only arm64 simulators are supported.
   s.pod_target_xcconfig = {
     'DEFINES_MODULE' => 'NO',
     'ENABLE_BITCODE' => 'NO',
     'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'NO',
     'APPLICATION_EXTENSION_API_ONLY' => 'NO',
-    'VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64'
+    'VALID_ARCHS[sdk=iphonesimulator*]' => 'arm64'
   }
   s.swift_version = '5.3'
   

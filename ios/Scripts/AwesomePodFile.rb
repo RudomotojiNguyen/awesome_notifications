@@ -7,6 +7,7 @@ def update_awesome_pod_build_settings(installer)
           config.build_settings['ENABLE_BITCODE'] = 'NO'
           config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'NO'
           config.build_settings['APPLICATION_EXTENSION_API_ONLY'] = 'NO'
+          config.build_settings['VALID_ARCHS[sdk=iphonesimulator*]'] = 'arm64'
         end
         puts "[Awesome Notifications] Successfully updated build settings for the pod: #{target.name}"
       end
