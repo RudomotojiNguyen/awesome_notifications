@@ -13,7 +13,7 @@ A complete solution to create Local Notifications and Push Notifications, throug
   s.static_framework = true
   s.dependency 'Flutter'
   s.dependency 'IosAwnCore', '~> 0.10.0'
-  s.platform = :ios, '15.0'
+  s.platform = :ios, '15.6'
 
   # Flutter.framework does not contain a i386 slice. Only arm64 simulators are supported.
   s.pod_target_xcconfig = {
